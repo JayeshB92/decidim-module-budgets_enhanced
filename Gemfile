@@ -4,16 +4,16 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", github: "decidim/decidim", branch: "release/0.22-stable"
+gem "decidim", "0.24.0"
 gem "decidim-budgets_enhanced", path: "."
 
 gem "bootsnap"
-gem "puma", "~> 4.3.3"
+gem "puma", ">= 5.0.0"
 gem "uglifier", "~> 4.1"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
-  gem "decidim-dev", github: "decidim/decidim", branch: "release/0.22-stable"
+  gem "decidim-dev", "0.24.0"
   gem "faker", "~> 1.9"
   gem "simplecov", require: false
 end
